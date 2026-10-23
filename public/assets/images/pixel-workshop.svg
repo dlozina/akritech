@@ -1,0 +1,82 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="640" height="560" viewBox="0 0 320 280" shape-rendering="crispEdges">
+<title>The systems workshop</title>
+<desc>An original pixel-art illustration of a connected engineering workshop, made with the Akritech blue palette.</desc>
+<defs>
+  <pattern id="tile" width="16" height="8" patternUnits="userSpaceOnUse"><path d="M0 0L8 4 16 0M8 4V8" fill="none" stroke="#9ADDFB" stroke-width=".5"/></pattern>
+  <g id="server">
+    <path d="M0 7L16 0 32 7 16 15Z" fill="#4FC3F7"/>
+    <path d="M0 7L16 15V59L0 51Z" fill="#026592"/>
+    <path d="M16 15L32 7V51L16 59Z" fill="#013349"/>
+    <path d="M3 14L13 19V26L3 21ZM3 28L13 33V40L3 35ZM3 42L13 47V52L3 47Z" fill="#014C6E"/>
+    <path d="M5 17L8 18V21L5 20ZM5 31L8 32V35L5 34ZM5 45L8 46V49L5 48Z" fill="#9ADDFB"/>
+    <path d="M19 23L29 18M19 36L29 31M19 49L29 44" stroke="#0398DC" stroke-width="2"/>
+  </g>
+  <g id="plant">
+    <path d="M10 29H18V37H10Z" fill="#026592"/>
+    <path d="M12 14H16V30H12Z" fill="#013349"/>
+    <path d="M8 0H20V4H24V8H28V20H24V24H4V20H0V8H4V4H8Z" fill="#0398DC"/>
+    <path d="M8 0H20V4H24V8H16V12H4V8H4V4H8Z" fill="#4FC3F7"/>
+    <path d="M0 14H8V18H20V24H4V20H0Z" fill="#026592"/>
+  </g>
+  <g id="box"><path d="M0 6L12 0 24 6 12 12Z" fill="#9ADDFB"/><path d="M0 6L12 12V26L0 20Z" fill="#0398DC"/><path d="M12 12L24 6V20L12 26Z" fill="#026592"/></g>
+</defs>
+<!-- Discrete pixels keep every surface on a deliberately small drawing grid. -->
+<g fill="#9ADDFB"><path d="M32 60H36V64H32ZM284 128H288V132H284ZM72 244H76V248H72ZM262 232H266V236H262ZM143 27H147V31H143Z"/><path d="M48 41H50V45H54V47H50V51H48V47H44V45H48ZM276 62H278V66H282V68H278V72H276V68H272V66H276Z"/></g>
+<!-- Rear island and its server rack. -->
+<path d="M157 104L228 69 297 104V117L228 152 157 117Z" fill="#026592"/>
+<path d="M157 104L228 69 297 104 228 139Z" fill="#C0EAFC"/>
+<path d="M157 104L228 69 297 104 228 139Z" fill="url(#tile)"/>
+<path d="M228 139L297 104V117L228 152Z" fill="#013349"/>
+<path d="M167 108L228 138 287 108" stroke="#4FC3F7" stroke-width="2" fill="none"/>
+<use href="#server" x="207" y="44"/><use href="#server" x="241" y="61"/>
+<use href="#plant" x="173" y="76"/>
+<!-- Network path between the two workspaces. -->
+<path d="M215 137V166L151 198" stroke="#013349" stroke-width="12" fill="none"/>
+<path d="M215 135V161L151 193" stroke="#4FC3F7" stroke-width="8" fill="none"/>
+<path d="M215 135V161L151 193" stroke="#E6F6FE" stroke-width="2" stroke-dasharray="4 6" fill="none"/>
+<path d="M176 107L144 123 116 109" stroke="#013349" stroke-width="10" fill="none"/>
+<path d="M176 104L144 120 116 106" stroke="#03A9F4" stroke-width="6" fill="none"/>
+<!-- Left island, signal tower. -->
+<path d="M19 127L79 97 139 127V139L79 169 19 139Z" fill="#026592"/>
+<path d="M19 127L79 97 139 127 79 157Z" fill="#C0EAFC"/>
+<path d="M19 127L79 97 139 127 79 157Z" fill="url(#tile)"/>
+<path d="M79 157L139 127V139L79 169Z" fill="#013349"/>
+<path d="M54 127L78 115 102 127 78 139Z" fill="#0398DC"/>
+<path d="M64 124L76 76H82L94 124H88L79 90 70 124Z" fill="#013349"/>
+<path d="M69 112H89M72 101H85" stroke="#026592" stroke-width="3"/>
+<path d="M76 68H82V81H76Z" fill="#03A9F4"/>
+<path d="M66 61H62V65H58V82H62V86H66M92 61H96V65H100V82H96V86H92" stroke="#03A9F4" stroke-width="3" fill="none"/>
+<path d="M56 51H52V55H48V60H44V86H48V91H52V95H56M102 51H106V55H110V60H114V86H110V91H106V95H102" stroke="#4FC3F7" stroke-width="3" fill="none"/>
+<use href="#box" x="27" y="116"/>
+<use href="#plant" x="104" y="107"/>
+<!-- Main workshop platform. -->
+<path d="M57 205L147 160 237 205V221L147 266 57 221Z" fill="#026592"/>
+<path d="M57 205L147 160 237 205 147 250Z" fill="#C0EAFC"/>
+<path d="M57 205L147 160 237 205 147 250Z" fill="url(#tile)"/>
+<path d="M147 250L237 205V221L147 266Z" fill="#013349"/>
+<path d="M66 211L147 251 228 211" stroke="#4FC3F7" stroke-width="2" fill="none"/>
+<!-- Workbench and CRT terminal. -->
+<path d="M103 196L146 175 187 195 144 217Z" fill="#0398DC"/>
+<path d="M103 196V203L144 224V217Z" fill="#026592"/>
+<path d="M144 217L187 195V202L144 224Z" fill="#013349"/>
+<path d="M109 204V220L114 222V207M175 207V221L180 219V205" stroke="#013349" stroke-width="4"/>
+<path d="M126 183L146 173 166 183 146 193Z" fill="#026592"/>
+<path d="M139 163H149V183H139Z" fill="#013349"/>
+<path d="M116 139L125 135 171 156V186L162 190 116 169Z" fill="#026592"/>
+<path d="M116 139L162 160V190L116 169Z" fill="#013349"/>
+<path d="M121 146L157 163V182L121 165Z" fill="#014C6E"/>
+<path d="M126 153L131 158 127 160M137 163L148 168" stroke="#4FC3F7" stroke-width="2" fill="none"/>
+<path d="M120 193L137 185 159 196 142 204Z" fill="#E6F6FE"/>
+<path d="M126 193L140 200M132 190L147 197M139 189L153 195" stroke="#0398DC" stroke-width="1"/>
+<!-- Small engineer character. -->
+<path d="M184 178H195V182H199V194H195V198H184V194H180V182H184Z" fill="#9ADDFB"/>
+<path d="M180 178H196V182H200V188H192V184H180Z" fill="#013349"/>
+<path d="M186 190H189V193H186Z" fill="#013349"/>
+<path d="M183 198H196V214H183Z" fill="#03A9F4"/>
+<path d="M180 201H184V212H180M196 201H200V210H196" fill="#026592"/>
+<path d="M183 214H188V226H181V222H183M191 214H196V222H199V226H191" fill="#013349"/>
+<use href="#plant" x="72" y="176"/>
+<use href="#box" x="101" y="218"/>
+<!-- Floating packet pixels. -->
+<path d="M199 153H205V159H199ZM157 113H162V118H157ZM155 207H159V211H155Z" fill="#03A9F4"/>
+</svg>

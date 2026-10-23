@@ -1,0 +1,147 @@
+{
+  "brand": "Akritech",
+  "navigation": [
+    {
+      "label": "Work",
+      "href": "#work"
+    },
+    {
+      "label": "Services",
+      "href": "#services"
+    },
+    {
+      "label": "About",
+      "href": "#about"
+    },
+    {
+      "label": "Contact",
+      "href": "#contact"
+    }
+  ],
+  "hero": {
+    "eyebrow": "Software & application engineering",
+    "title": "From complex workflows to working systems.",
+    "description": "I'm Dino Lozina, founder of Akritech. I build applications end to end — from the interface and backend to integrations, deployment, and production operations. My work spans conversational AI, distributed platforms, and developer tools.",
+    "primaryAction": {
+      "label": "Let's talk about your project",
+      "href": "#contact"
+    },
+    "secondaryAction": {
+      "label": "Explore my work",
+      "href": "#work"
+    },
+    "location": "Based in Split, Croatia · Working remotely"
+  },
+  "work": {
+    "eyebrow": "Selected engineering work",
+    "title": "Built, shipped, and operated.",
+    "introduction": "Workflow orchestration, voice infrastructure, secure integrations, and cloud platforms — selected work from design through production.",
+    "projects": [
+      {
+        "id": "orchestration",
+        "title": "Workflows that recover from failure",
+        "category": "Workflow orchestration",
+        "summary": "Founded a service for multi-step workflows connecting calls, messages, waits, and human review. Built conditional routing, retry and resume, bulk recovery, and operational monitoring.",
+        "result": "Work can resume after failures, with automatic retries when a provider recovers and visibility into tasks that need attention.",
+        "technologies": ["Python", "FastAPI", "Cloud Tasks", "Pub/Sub"]
+      },
+      {
+        "id": "voice",
+        "title": "The infrastructure behind the conversation",
+        "category": "Voice & messaging",
+        "summary": "Extracted telephony from a larger application into a regional service owning phone-number registries, number pools, and outbound calling. Built number-management tools and integrated voice and SMS into the wider platform.",
+        "result": "A dedicated production service with clear ownership of calling infrastructure and the tools to manage it.",
+        "technologies": ["Python", "LiveKit", "React", "TypeScript"]
+      },
+      {
+        "id": "integrations",
+        "title": "Connecting AI to real operational work",
+        "category": "Secure integrations",
+        "summary": "Delivered an after-hours callback integration from design through production, including secure event delivery, human approval, recording and transcript exports, and knowledge-base synchronization.",
+        "result": "Conversation outputs move into downstream systems through an auditable workflow with a human review gate.",
+        "technologies": ["Outbox pattern", "Mutual TLS", "FastAPI", "React"]
+      },
+      {
+        "id": "platforms",
+        "title": "Cloud platforms developers can build on",
+        "category": "Distributed systems & developer experience",
+        "summary": "Designed and implemented serverless execution and JavaScript offloading services. Built SDKs, command-line tools, API libraries, and documentation, and led distributed engineering teams through architecture and delivery.",
+        "result": "Experience across both the distributed platform and the interfaces developers use to work with it.",
+        "technologies": ["Rust", "WebAssembly", "TypeScript", "Kubernetes"]
+      }
+    ]
+  },
+  "services": {
+    "eyebrow": "How I can help",
+    "title": "Hands-on engineering. From architecture through delivery.",
+    "items": [
+      {
+        "title": "End-to-end application engineering",
+        "description": "Build the complete application, from the user interface and APIs to data, integrations, and deployment. Carry it through release and into production support."
+      },
+      {
+        "title": "Backend & platform engineering",
+        "description": "Design and build services, APIs, event-driven workflows, and integrations. Turn a new product requirement or a growing monolith into a system with clear boundaries."
+      },
+      {
+        "title": "Conversational AI systems",
+        "description": "Connect voice agents and LLMs to telephony, messaging, workflow orchestration, and human review. Handle the scheduling, state, and recovery around the conversation."
+      },
+      {
+        "title": "Architecture & technical leadership",
+        "description": "Work through architecture decisions, write actionable technical proposals, review code and APIs, and help engineering teams deliver changes across services."
+      },
+      {
+        "title": "Production reliability",
+        "description": "Build recovery paths, observability, and controlled rollouts into the system. Improve consistency across services and make failures easier to understand and resolve."
+      }
+    ],
+    "introduction": "End-to-end application engineering: interfaces, backend services, integrations, deployment, and production support."
+  },
+  "engineering": {
+    "eyebrow": "Beyond the first release",
+    "title": "The details are part of the work.",
+    "items": [
+      {
+        "title": "Consistent state across services",
+        "description": "Replaced five overlapping status vocabularies with one shared outcome model, delivered through a phased migration without downtime."
+      },
+      {
+        "title": "Clear access boundaries",
+        "description": "Implemented tenant-scoped access, role-based visibility, and dual approval for administrator provisioning."
+      },
+      {
+        "title": "Ownership in production",
+        "description": "Carried responsibility for releases across two regions, incident analysis, operational monitoring, and dependency security updates."
+      }
+    ]
+  },
+  "about": {
+    "eyebrow": "The engineer behind Akritech",
+    "title": "Hi, I'm Dino.",
+    "paragraphs": [
+      "I'm a software engineer based in Split, Croatia. I started in industrial automation, programming machines and robotic systems, and moved into developer tools, distributed cloud platforms, and conversational AI.",
+      "That path shapes how I work: understand the system, make its behavior explicit, and take responsibility for what happens after it ships. I combine hands-on implementation with architecture, technical leadership, and code review.",
+      "Alongside engineering, I've taught robotics and advanced control systems and authored educational books on robotics. Akritech is my software engineering consultancy, established in 2022."
+    ],
+    "focus": [
+      "Python & FastAPI",
+      "Rust & WebAssembly",
+      "TypeScript & React",
+      "GCP & Kubernetes",
+      "Event-driven systems",
+      "Voice & LLM integration"
+    ]
+  },
+  "contact": {
+    "eyebrow": "Let's build something useful",
+    "title": "What are you working on?",
+    "description": "Tell me about the system you're building, the problem you're facing, and where you need help.",
+    "actionLabel": "Get in touch",
+    "email": "dino@akritech.eu"
+  },
+  "footer": {
+    "name": "Akritech",
+    "description": "Software engineering & consulting."
+  }
+}

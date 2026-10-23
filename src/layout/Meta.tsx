@@ -17,6 +17,20 @@ const Meta = (props: IMetaProps) => {
     <>
       <Head>
         <meta charSet="UTF-8" key="charset" />
+        <link
+          rel="preload"
+          href={`${router.basePath}/assets/fonts/jetbrains-mono-regular.woff2`}
+          as="font"
+          type="font/woff2"
+          crossOrigin="anonymous"
+        />
+        <link
+          rel="preload"
+          href={`${router.basePath}/assets/fonts/jetbrains-mono-bold.woff2`}
+          as="font"
+          type="font/woff2"
+          crossOrigin="anonymous"
+        />
         <meta
           name="viewport"
           content="width=device-width,initial-scale=1"
