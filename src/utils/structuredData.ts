@@ -38,6 +38,7 @@ export const structuredData = {
       jobTitle: 'Software engineer and founder',
       worksFor: { '@id': organizationId },
       sameAs: [
+        'https://www.dinolozina.eu/',
         'https://github.com/dlozina',
         'https://www.linkedin.com/in/dino-lozina-6a049779/',
       ],

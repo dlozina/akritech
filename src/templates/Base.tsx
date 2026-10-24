@@ -220,6 +220,13 @@ const Base = () => (
           {content.about.paragraphs.map((paragraph) => (
             <p key={paragraph}>{paragraph}</p>
           ))}
+          <p>
+            Explore my engineering journey, robotics books, and interests on{' '}
+            <a className="text-link" href="https://www.dinolozina.eu/">
+              my personal website <Arrow />
+            </a>
+            .
+          </p>
           <p className="eyebrow stack-label">Tools I work with</p>
           <ul className="tags">
             {content.about.focus.map((item) => (
@@ -272,6 +279,9 @@ const Base = () => (
         © {new Date().getFullYear()} Akritech · Built with care, block by block.
       </p>
       <div>
+        <a href="https://www.dinolozina.eu/">
+          Dino Lozina <Arrow />
+        </a>
         <a href="https://github.com/dlozina">
           GitHub <Arrow />
         </a>

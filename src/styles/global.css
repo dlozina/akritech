@@ -577,6 +577,7 @@ p {
 }
 .site-footer > div {
   display: flex;
+  flex-wrap: wrap;
   gap: 24px;
   font-size: 11px;
 }
