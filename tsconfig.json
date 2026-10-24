@@ -2,15 +2,13 @@
   "compilerOptions": {
     "lib": ["dom", "dom.iterable", "esnext"],
     "module": "esnext",
-    "moduleResolution": "node",
+    "moduleResolution": "bundler",
     "resolveJsonModule": true,
     "removeComments": true,
-    "preserveConstEnums": true,
     "strict": true,
     "alwaysStrict": true,
     "strictNullChecks": true,
     "noUncheckedIndexedAccess": true,
-
     "noImplicitAny": true,
     "noImplicitReturns": true,
     "noImplicitThis": true,
@@ -18,19 +16,13 @@
     "noUnusedParameters": true,
     "allowUnreachableCode": false,
     "noFallthroughCasesInSwitch": true,
-
-    "target": "es5",
-    "outDir": "out",
-    "declaration": true,
-    "sourceMap": true,
-
+    "target": "ES2022",
     "esModuleInterop": true,
     "allowSyntheticDefaultImports": true,
     "allowJs": false,
     "skipLibCheck": true,
     "forceConsistentCasingInFileNames": true,
-
-    "jsx": "preserve",
+    "jsx": "react-jsx",
     "noEmit": true,
     "isolatedModules": true,
     "incremental": true

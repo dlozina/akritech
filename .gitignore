@@ -36,3 +36,6 @@ local
 
 #JetBrains
 .idea
+
+# TypeScript incremental build cache
+*.tsbuildinfo

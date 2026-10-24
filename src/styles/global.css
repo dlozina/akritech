@@ -1,6 +1,5 @@
-@tailwind base;
-@tailwind components;
-@tailwind utilities;
+@import 'tailwindcss';
+@config "../../tailwind.config.js";
 
 @font-face {
   font-family: 'JetBrains Mono';
@@ -227,7 +226,9 @@ p {
   font-size: 14px;
   font-weight: 600;
   box-shadow: 4px 4px 0 #9addfb;
-  transition: box-shadow 0.15s, transform 0.15s;
+  transition:
+    box-shadow 0.15s,
+    transform 0.15s;
 }
 .button:hover {
   transform: translate(-2px, -2px);

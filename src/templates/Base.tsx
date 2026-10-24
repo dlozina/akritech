@@ -33,7 +33,7 @@ const Base = () => (
     <Meta
       title={AppConfig.title}
       description={AppConfig.description}
-      canonical="https://www.akritech.eu/"
+      canonical={AppConfig.url}
     />
     <a className="skip-link" href="#main">
       Skip to content
@@ -80,6 +80,7 @@ const Base = () => (
             alt="Game-inspired pixel art of a coastal engineering studio at dusk, with glowing computer screens overlooking the sea and distant islands."
             width="1254"
             height="1254"
+            fetchPriority="high"
           />
           <figcaption>
             <span>The workshop, after hours.</span>

@@ -4,6 +4,8 @@ Dino Lozina's software engineering and consulting website. Built with Next.js an
 
 ## Local development
 
+Use Node.js 24 LTS (also specified in `.nvmrc` and the Vercel runtime configuration).
+
 ```sh
 npm ci
 npm run dev -- -p 3001
@@ -14,9 +16,10 @@ Open http://localhost:3001.
 ## Build and verify
 
 ```sh
-npm run build-types
+npm run check
 npm run build
-npm run export
+npm run test:seo
+npm audit
 ```
 
 The deployable static site is generated in `out/`. To preview that exact output:
@@ -25,7 +28,24 @@ The deployable static site is generated in `out/`. To preview that exact output:
 python3 -m http.server 4173 --bind 127.0.0.1 --directory out
 ```
 
-Open http://localhost:4173. The production site is hosted on Vercel through the connected GitHub repository. Local development does not publish changes.
+Open http://localhost:4173. Next.js creates the static export as part of `npm run build`; a separate export command is no longer needed. The production site is hosted on Vercel through the connected GitHub repository. Local development does not publish changes. GitHub Actions runs linting, type checks, a production build, SEO checks against the exported HTML, and a production dependency audit. The obsolete GitHub Pages deployment has been replaced by these checks.
+
+## Search and sharing
+
+- `src/layout/Meta.tsx` supplies a unique title and description, the canonical URL, indexing instructions, and Open Graph and Twitter sharing metadata.
+- `src/utils/structuredData.ts` describes Akritech, Dino Lozina, and the website using linked JSON-LD entities. Keep these facts consistent with the visible public copy.
+- `public/robots.txt` allows crawling and links to `public/sitemap.xml`. The sitemap contains the single real page; section anchors are not separate pages. Add future canonical pages when they exist.
+- `public/assets/images/social-preview.jpg` is a JPEG encoding of the existing hero for social previews. The original hero asset is unchanged.
+- Main content and metadata are present in the exported HTML. The hero has high fetch priority; lower illustrations retain lazy loading and explicit dimensions.
+- The canonical host is `https://www.akritech.eu/`. Vercel already redirects the apex domain and HTTP traffic to it.
+
+After deployment, submit `https://www.akritech.eu/sitemap.xml` in the owner's Google Search Console property and use URL Inspection to request recrawling. Search Console access is managed separately; deploying metadata does not submit the sitemap or guarantee a search ranking.
+
+References: [Google SEO Starter Guide](https://developers.google.com/search/docs/fundamentals/seo-starter-guide), [Organization structured data](https://developers.google.com/search/docs/appearance/structured-data/organization), and [Next.js static exports](https://nextjs.org/docs/pages/guides/static-exports).
+
+## Dependency maintenance
+
+Runtime packages and active tooling use stable releases, pinned in `package.json` and `package-lock.json`. TypeScript remains on 6.0.3 because the current TypeScript ESLint parser supports versions below 6.1; TypeScript 7 requires a compatible parser release before upgrading. Node types match the Node 24 deployment runtime. Removed starter dependencies are no longer required by the site. Run `npm outdated` and `npm audit` during maintenance, and verify major upgrades with `npm run build-prod` and desktop/mobile previews.
 
 ## Editing
 
