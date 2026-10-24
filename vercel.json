@@ -3,5 +3,5 @@
   "framework": "nextjs",
   "installCommand": "npm ci",
   "buildCommand": "npm run check && npm run build && npm run test:seo",
-  "outputDirectory": "out"
+  "outputDirectory": ".next"
 }
