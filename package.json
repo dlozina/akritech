@@ -8,7 +8,7 @@
     "build-prod": "npm run clean && npm run check && npm run build && npm run test:seo",
     "clean": "rimraf .next out",
     "lint": "eslint . --max-warnings=0",
-    "build-types": "tsc --noEmit --pretty",
+    "build-types": "next typegen && tsc --noEmit --pretty",
     "check": "npm run lint && npm run build-types",
     "test:seo": "node --test tests/seo.test.mjs",
     "prepare": "husky"
